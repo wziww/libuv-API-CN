@@ -6,5 +6,5 @@
 
 ## Methods
 
-* [Defining Methods](methods.md)
+* [错误处理](methods.md)
 
