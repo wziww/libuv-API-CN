@@ -1,4 +1,4 @@
-# API 文档
+# libuv API 中文文档 \(v1.x\)
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+同步翻译自 [http://docs.libuv.org/en/v1.x/api.html](http://docs.libuv.org/en/v1.x/api.html)
 
