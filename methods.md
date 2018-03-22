@@ -9,16 +9,12 @@ console.log('My first method');
 ```
 
 
-
-
-
-{% method %}
 ## 错误常量
 
-My first method exposes how to print a message in JavaScript and Go.
+#### UV_E2BIG
 
 {% sample lang="js" %}
-Here is how to print a message to `stdout` using JavaScript.
+参数列表过长
 
 ```js
 console.log('My first method');
