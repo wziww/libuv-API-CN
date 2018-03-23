@@ -100,3 +100,7 @@ socket类别不支持\(socket type not supported\)
 
 错误的文件描述符\(bad file descriptor\)
 
+**UV\_EBUSY**
+
+资源忙碌或被锁\(resource busy or locked\)
+
