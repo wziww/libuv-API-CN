@@ -93,5 +93,13 @@ Warning:该函数不是线程安全的.
 
 ---
 
+```cpp
+int uv_run(uv_loop_t* loop, uv_run_mode mode)
+```
+
+该函数运行 event loop .根据不同的指定模式会采取不同的执行方式:
+
+* **UV**_**RUNDEFAULT: **_event pool 将会运行直到没有更多的活动引用句柄或请求. 返回non-zero 如果调用了 uv\_stop\(\) 并且仍然有活动引用句柄或者请求, 其他情况返回 zero.
+
 
 
