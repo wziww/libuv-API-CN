@@ -13,11 +13,8 @@
 ## 错误常量
 
 ##### UV_E2BIG (常量 下同)
-
-{% sample lang="js" %}
 参数列表过长
-
-```js
-console.log('My first method');
 ```
+````
 
+````
