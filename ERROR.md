@@ -260,7 +260,13 @@ socket未连接\(socket is not connected\)
 
 协议不支持\(protocol not supported\)
 
+**UV\_EPROTOTYPE**
 
+socket的协议类型错误\(protocol wrong type for socket\)
+
+**UV\_ERANGE**
+
+结果过大\(result too large\)
 
 ...
 
