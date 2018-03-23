@@ -11,7 +11,7 @@ console.log('My first method');
 
 ## 错误常量
 
-#### UV_E2BIG (-7)
+##### UV_E2BIG (-7)
 
 {% sample lang="js" %}
 参数列表过长
@@ -20,17 +20,3 @@ console.log('My first method');
 console.log('My first method');
 ```
 
-{% sample lang="go" %}
-Here is how to print a message to `stdout` using Go.
-
-```go
-fmt.Println("My first method")
-```
-
-{% common %}
-Whatever language you are using, the result will be the same.
-
-```bash
-$ My first method
-```
-{% endmethod %}
