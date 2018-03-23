@@ -162,6 +162,20 @@ socket连接已存在\(socket is already connected\)
 
 **UV\_EISDIR**
 
+对目录的非法操作\(illegal operation on a directory\)
+
+**UV\_ELOOP**
+
+过多的符号链接\(too many symbolic links encountered\)
+
+**UV\_EMFILE**
+
+过多的打开文件\(too many open files\)
+
+**UV\_EMSGSIZE**
+
+信息过长\(message too long\)
+
 ...
 
 # API
