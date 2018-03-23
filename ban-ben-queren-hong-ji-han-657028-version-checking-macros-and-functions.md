@@ -53,5 +53,15 @@ _New in version 1.7.0._
 
 # Functions
 
+```cpp
+unsigned int uv_version(void)
+//Returns UV_VERSION_HEX.
+```
+
+```cpp
+const char* uv_version_string(void)
+//Returns the libuv version number as a string. For non-release versions the version suffix is included.
+```
+
 
 
