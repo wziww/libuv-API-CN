@@ -49,5 +49,5 @@ uv_loop_init(loop);
 int uv_loop_configure(uv_loop_t* loop, uv_loop_option option, ...)
 ```
 
-
+新增于 1.0.2 版本
 
