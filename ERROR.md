@@ -196,6 +196,24 @@ socket连接已存在\(socket is already connected\)
 
 没有可用 buffer空间\(no buffer space available\)
 
+**UV\_ENODEV**
+
+没有这样的设备\(no such device\)
+
+**UV\_ENOENT**
+
+文件或目录不存在\(no such file or directory\)
+
+**UV\_ENOMEM**
+
+内存不足\(not enough memory\)
+
+**UV\_ENONET**
+
+设备不在网络中\(machine is not on the network\)
+
+
+
 ...
 
 # API
