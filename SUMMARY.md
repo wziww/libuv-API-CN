@@ -6,5 +6,5 @@
 
 ## API
 
-* [错误处理\(Error handling\)](methods.md)
+* [错误处理\(Error handling\)](ERROR.md)
 
