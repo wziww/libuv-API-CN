@@ -32,6 +32,8 @@ typedef enum {
 
 ## API
 
+---
+
 ```cpp
 int uv_loop_init(uv_loop_t* loop)
 ```
