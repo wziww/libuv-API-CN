@@ -4,13 +4,13 @@
 
 ### 数据类型
 
-**uv\_loop\_t**
+#### **uv\_loop\_t**
 
 Loop的数据类型
 
-**uv\_run\_mode**
+#### **uv\_run\_mode**
 
-Loop运行方式 \(枚举类型\)  用作运行loop   通过调用函数 uv\_run\(\)
+Loop**运行方式** \(枚举类型\)  用作运行loop   通过调用函数 **uv\_run\(\)**
 
 ```cpp
 typedef enum {
@@ -20,9 +20,11 @@ typedef enum {
 } uv_run_mode;
 ```
 
-void \(\*uv\_walk\_cb\)\(uv\_handle\_t\* handle, void\* arg\)  
+void \(\*uv\_walk\_cb\)\(uv\_handle\_t\* handle, void\* arg\)
 
 传递给uv\_walk\(\)的回调函数的类型定义
+
+### Public members
 
 
 
