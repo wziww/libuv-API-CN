@@ -174,6 +174,11 @@ int uv_translate_sys_error(int sys_errno)
 
 返回 libuv 错误代码相当于特定平台相关的错误代码, Unix 上 POSIX 错误码\(储存在 error 中\), Windows 上 Win32错误码\(由 GetLastError\(\) 或者 WSAGetLastError\(\)方法得到\).
 
+```cpp
+uv_translate_sys_error(UV_EEXIST);
+//-17
+```
+
 如果 _sys\_errno _已经是一个 libuv 错误 ,他将直接返回.
 
 > Changed: v1.10.0 中声明为public函数
