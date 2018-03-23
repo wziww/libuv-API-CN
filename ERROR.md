@@ -132,3 +132,22 @@ socket类别不支持\(socket type not supported\)
 
 文件已存在\(file already exists\)
 
+## API
+
+```
+const char* uv_strerror(int err)
+```
+
+返回传入的错误码代表的错误信息.
+
+Leaks a few bytes of memory when you call it with an unknown error code.
+
+```cpp
+uv_strerror(UV_EEXIST);
+//file already exists
+```
+
+
+
+
+
