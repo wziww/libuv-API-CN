@@ -137,5 +137,11 @@ int uv_backend_fd(const uv_loop_t* loop)
 
 获取 backend 文件描述符. 仅支持 kqueue,epoll 和 event ports.
 
-可与 uv\_run_\(loop,UV_RUN\_NOWAIT\) 结合使用在一个线程中轮询, 其他中执行 event loop 的回调. 案例可看 test/test-embed.c文件
+可与 uv\_run\_\(loop,UV\_RUN\_NOWAIT\) 结合使用在一个线程中轮询, 其他中执行 event loop 的回调. 案例可看 test/test-embed.c文件.
+
+```ruby
+Note: 嵌入一个 kqueue fd 进 另一个 kqueue pollset 并不能在所有平台都能正常使用. 这不是一个添加 fd 的错误 它从不生成 events.
+```
+
+
 
