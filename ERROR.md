@@ -104,3 +104,23 @@ socket类别不支持\(socket type not supported\)
 
 资源忙碌或被锁\(resource busy or locked\)
 
+**UV\_ECANCELED**
+
+操作取消\(operation canceled\)
+
+**UV\_ECHARSET**
+
+无效的Unicode字符\(invalid Unicode character\)
+
+**UV\_ECONNABORTED**
+
+软件造成连接终止\(software caused connection abort\)
+
+**UV\_ECONNREFUSED**
+
+连接拒绝\(connection refused\)
+
+**UV\_ECONNRESET**
+
+对等点连接复位\(connection reset by peer\)
+
