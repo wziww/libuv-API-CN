@@ -79,11 +79,13 @@ uv_loop_t* uv_default_loop(void)
 
 该函数返回一个初始好的默认loop, 当分配失败的时候会返回 **NULL**
 
-该函数是获得在整个应用中全局性 loop 的一个便捷方法, 默认的 loop 与通过调用 uv\_loop\_\_\_init\(\) 生成的 loop 是没啥不同的, 默认 
+该函数是获得在整个应用中全局性 loop 的一个便捷方法, 默认的 loop 与通过调用 uv\_loop\_\_\_init\(\) 生成的 loop 是没啥不同的, 默认
 
 loop 可以\(并且应该\)通过 uv\_loop\_close\(\) 来关闭， 因此可以释放分配给它的资源.
 
-
+```
+Warning:该函数不是线程安全的.
+```
 
 > nodejs中使用了默认的loop作为自己的主loop。如果你在编写nodejs的绑定，你应该注意一下。
 >
