@@ -1,7 +1,5 @@
 # Macros
 
-
-
 ### UV\_VERSION\_MAJOR
 
 > libuv 主版本号
@@ -27,7 +25,6 @@
 > 返回 libuv 版本打包成一个单一的整数。每个组件使用8位，补丁号存储在8个最小有效位中。例如libuv 1.2.3为0x010203.
 
 ```cpp
-
 #ifndef UV_VERSION_H
 #define UV_VERSION_H
 
@@ -51,6 +48,10 @@
 
 #endif /* UV_VERSION_H */"dev"
 ```
+
+_New in version 1.7.0._
+
+# Functions
 
 
 
