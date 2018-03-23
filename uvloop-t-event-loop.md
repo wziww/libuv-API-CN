@@ -206,12 +206,12 @@ int uv_loop_fork(uv_loop_t* loop)
 
 该函数在 windows 上不被支持，会返回 `UV_ENOSYS`错误。
 
-**注意：该函数处于试验阶段。可能会存在一些bugs，可能会改变或者被移除，稳定性不作保证。**
+**Caution：该函数处于试验阶段。可能会存在一些bugs，可能会改变或者被移除，稳定性不作保证。**
 
 ```
 Note：在 Mac OS X 系统上，如果目录的文件句柄在父进程的任意 event loop 使用了，子进程将不能去使用最有效的 FSEvent 实施。
 作为替代，在子进程中对目录 FS event 句柄的使用将会回落到其他基于 kqueue 的系统相同的实现。
 ```
 
-
+**Caution：**
 
