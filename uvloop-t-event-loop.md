@@ -170,5 +170,11 @@ Note: 使用 uv_hrtime() 如果需要获得的亚毫秒时间
 
 ---
 
+```cpp
+void uv_update_time(uv_loop_t* loop)
+```
+
+更新 event loop 的对于"当前"的时间概念. Libuv 在event loop 轮询开始的时候缓存当前时间一遍减少时间相关的系统的调用次数.
+
 
 
