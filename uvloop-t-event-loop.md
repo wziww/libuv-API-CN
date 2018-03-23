@@ -53,3 +53,7 @@ int uv_loop_configure(uv_loop_t* loop, uv_loop_option option, ...)
 
 loop配置函数 需在 第一次调用uv\_run\(\) 前调用 除非额外提及
 
+成功的时候返回值为 0 ，失败的时候返回值为 UV\_E\* 错误码. 准备好处理UV\_ENOSYS; 它意味着loop option 不被平台支持.
+
+
+
