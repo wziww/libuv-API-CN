@@ -140,12 +140,14 @@ const char* uv_strerror(int err)
 
 返回传入的错误码代表的错误信息.
 
-Leaks a few bytes of memory when you call it with an unknown error code.
+当使用未定义的错误码时，会泄露几个bytes的内存.
 
 ```cpp
 uv_strerror(UV_EEXIST);
 //file already exists
 ```
+
+
 
 
 
