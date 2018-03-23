@@ -20,5 +20,9 @@ typedef enum {
 } uv_run_mode;
 ```
 
+void \(\*uv\_walk\_cb\)\(uv\_handle\_t\* handle, void\* arg\)  
+
+传递给uv\_walk\(\)的回调函数的类型定义
+
 
 
