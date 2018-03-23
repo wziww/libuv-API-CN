@@ -51,7 +51,5 @@ int uv_loop_configure(uv_loop_t* loop, uv_loop_option option, ...)
 
 新增于 1.0.2 版本
 
-
-
-
+loop配置函数 需在 uv\_run\(\) 前调用 
 
