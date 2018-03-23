@@ -204,7 +204,9 @@ int uv_loop_fork(uv_loop_t* loop)
 
 如果可能话， 在子进程中创建一个**新的 loop** 代替复用 父进程的loop 会是一个**更好**的选择。子进程中 fork 后创建的新的 loop 不该使用这个函数。
 
-该函数在 windows 上不被支持，会返回  
+该函数在 windows 上不被支持，会返回 `UV_ENOSYS `错误。
+
+
 
 
 
