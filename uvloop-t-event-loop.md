@@ -178,3 +178,11 @@ void uv_update_time(uv_loop_t* loop)
 
 你通常不需要调用此函数，除非你有回调阻塞 event loop 较长时间，“长”在某种程度上是主观的，但可能是毫秒或以上的顺序。
 
+---
+
+```cpp
+void uv_walk(uv_loop_t* loop, uv_walk_cb walk_cb, void* arg)
+```
+
+在轮询中传递句柄，walk\_cb 将会被执行（arg为提供参数）。
+
