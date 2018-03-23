@@ -115,3 +115,9 @@ int uv_loop_alive(const uv_loop_t* loop)
 
 ---
 
+```cpp
+void uv_stop(uv_loop_t* loop)
+```
+
+停止 event loop, 让 uv\_run\(\) 能够尽快结束,  发生于**不早于**下次 loop 迭代. 如果该函数调用发生在 I/O 阻塞之前,  loop 将不会在此次迭代中发生阻塞.
+
