@@ -4,14 +4,15 @@
 
 当一个函数返回了一个错误，这个函数的回调函数永远不会被调用。
 
-```js
-console.log('My first method');
+#注意：
+```
+实现细节:在Unix上 错误信号为一个负常量，在windows上他们为libuv定义的任意否定的数字
 ```
 
 
 ## 错误常量
 
-##### UV_E2BIG (-7)
+##### UV_E2BIG (常量 下同)
 
 {% sample lang="js" %}
 参数列表过长
