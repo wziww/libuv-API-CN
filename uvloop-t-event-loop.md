@@ -164,6 +164,10 @@ uint64_t uv_now(const uv_loop_t* loop)
 
 时间戳从某个任意时间点单调递增. 不要对出发点做假设,  得到的只会是个失望结果
 
+```ruby
+Note: 使用 uv_hrtime() 如果需要获得的亚毫秒时间
+```
+
 ---
 
 
