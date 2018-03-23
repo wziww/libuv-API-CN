@@ -176,6 +176,26 @@ socket连接已存在\(socket is already connected\)
 
 信息过长\(message too long\)
 
+**UV\_ENAMETOOLONG**
+
+名称过长\(name too long\)
+
+**UV\_ENETDOWN**
+
+网络中断\(network is down\)
+
+**UV\_ENETUNREACH**
+
+网络不可达\(network is unreachable\)
+
+**UV\_ENFILE**
+
+文件表溢出\(file table overflow\)
+
+**UV\_ENOBUFS**
+
+没有可用 buffer空间\(no buffer space available\)
+
 ...
 
 # API
