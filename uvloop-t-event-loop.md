@@ -215,3 +215,13 @@ Note：在 Mac OS X 系统上，如果目录的文件句柄在父进程的任意
 
 **Caution：**
 
+---
+
+```cpp
+void* uv_loop_get_data(const uv_loop_t* loop)
+```
+
+返回 loop-&gt;data.
+
+新增于 1.19.0版本
+
