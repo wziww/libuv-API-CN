@@ -48,3 +48,7 @@
 
 ai\_flags值有误\(bad ai\_flags value\)
 
+**UV\_EAI\_BADHINTS**
+
+无效的hints值\(invalid value for hints\)
+
