@@ -81,7 +81,7 @@ uv_loop_t* uv_default_loop(void)
 
 > nodejs中使用了默认的loop作为自己的主loop。如果你在编写nodejs的绑定，你应该注意一下。
 >
-> -----引用自 https://luohaha.github.io/Chinese-uvbook/source/basics\_of\_libuv.html
+> 引用自 [https://luohaha.github.io/Chinese-uvbook/source/basics\_of\_libuv.html](https://luohaha.github.io/Chinese-uvbook/source/basics_of_libuv.html)
 
 
 
