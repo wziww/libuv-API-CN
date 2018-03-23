@@ -32,8 +32,6 @@ typedef enum {
 
 ## API
 
----
-
 ```cpp
 int uv_loop_init(uv_loop_t* loop)
 ```
@@ -45,7 +43,11 @@ uv_loop_t *loop = new uv_loop_t();
 uv_loop_init(loop);
 ```
 
-\*\*\*
+---
 
-int uv\_loop\_configure\(uv\_loop\_t\* loop, uv\_loop\_option option, ...\)
+```cpp
+int uv_loop_configure(uv_loop_t* loop, uv_loop_option option, ...)
+```
+
+
 
