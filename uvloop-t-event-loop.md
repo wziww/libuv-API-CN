@@ -69,5 +69,19 @@ loop配置函数 需在 第一次调用uv\_run\(\) 前调用 除非额外提及
 int uv_loop_close(uv_loop_t* loop)
 ```
 
-释放所有 loop 资源, 只有在 loop 执行完毕, 所有打开的句柄和请求都已关闭时才调用此函数,  否则会返回 UV\_EBUSY 信号. 当该函数结束后, 用户可以释放分配给 loop 的内存
+释放所有 loop 资源, 只有在 loop 执行完毕, 所有打开的句柄和请求都已关闭时才调用此函数,  否则会返回 UV\_EBUSY 信号. 当该函数结束后, 用户可以释放分配给 loop 的内存.
+
+---
+
+```cpp
+uv_loop_t* uv_default_loop(void)
+```
+
+该函数返回一个初始好的默认loop, 当分配失败的时候会返回 **NULL**
+
+> nodejs中使用了默认的loop作为自己的主loop。如果你在编写nodejs的绑定，你应该注意一下。
+>
+> -----引用自 https://luohaha.github.io/Chinese-uvbook/source/basics\_of\_libuv.html
+
+
 
