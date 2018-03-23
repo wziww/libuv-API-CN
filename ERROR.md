@@ -132,7 +132,9 @@ socket类别不支持\(socket type not supported\)
 
 文件已存在\(file already exists\)
 
-## API
+# API
+
+### uv\_strerror
 
 ```cpp
 const char* uv_strerror(int err)
@@ -140,14 +142,20 @@ const char* uv_strerror(int err)
 
 返回传入的错误码代表的错误信息.
 
-当使用未定义的错误码时，会泄露几个bytes的内存.
+当使用未定义的错误码时, 会泄露几个bytes的内存.
 
 ```cpp
 uv_strerror(UV_EEXIST);
 //file already exists
 ```
 
+### uv\_err\_name
 
+```cpp
+const char* uv_err_name(int err)
+```
 
+返回传入错误码的错误名称.
 
+当使用未定义的错误码时, 会泄露几个bytes的内存.
 
