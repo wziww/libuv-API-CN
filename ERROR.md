@@ -34,3 +34,5 @@
 
 **UV\_EAGAIN**
 
+\(resource temporarily unavailable\)
+
