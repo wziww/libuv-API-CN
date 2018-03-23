@@ -52,3 +52,11 @@ ai\_flags值有误\(bad ai\_flags value\)
 
 无效的hints值\(invalid value for hints\)
 
+**UV\_EAI\_CANCELED**
+
+请求取消\(request canceled\)
+
+**UV\_EAI\_FAIL**
+
+永久失败（permanent failure）
+
