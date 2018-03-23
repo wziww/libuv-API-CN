@@ -11,7 +11,7 @@ console.log('My first method');
 
 ## 错误常量
 
-#### UV_E2BIG
+#### UV_E2BIG (-7)
 
 {% sample lang="js" %}
 参数列表过长

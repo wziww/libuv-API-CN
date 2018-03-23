@@ -4,7 +4,7 @@
 
 * [libuv API文档](README.md)
 
-## Methods
+## API
 
 * [错误处理\(Error handling\)](methods.md)
 
