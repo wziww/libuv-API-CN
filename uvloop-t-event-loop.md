@@ -223,5 +223,15 @@ void* uv_loop_get_data(const uv_loop_t* loop)
 
 返回 loop-&gt;data.
 
-新增于 1.19.0版本
+新增于 1.19.0 版本
+
+---
+
+```cpp
+void* uv_loop_set_data(uv_loop_t* loop, void* data)
+```
+
+将 data 设置为 loop-&gt;data 的值。
+
+新增于 1.19.0 版本
 
