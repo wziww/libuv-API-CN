@@ -135,5 +135,7 @@ size_t uv_loop_size(void)
 int uv_backend_fd(const uv_loop_t* loop)
 ```
 
-获取 backend 文件描述符. 仅支持 kqueue,epoll 和 event ports
+获取 backend 文件描述符. 仅支持 kqueue,epoll 和 event ports.
+
+可与 uv\_run_\(loop,UV_RUN\_NOWAIT\) 结合使用在一个线程中轮询, 其他中执行 event loop 的回调. 案例可看 test/test-embed.c文件
 
