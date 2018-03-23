@@ -84,3 +84,19 @@ ai族不被支持\(ai\_family not supported\)
 
 未知的解决协议\(resolved protocol is unknown\)
 
+**UV\_EAI\_SERVICE**
+
+服务不支持该socket类别\(service not available for socket type\)
+
+**UV\_EAI\_SOCKTYPE**
+
+socket类别不支持\(socket type not supported\)
+
+**UV\_EALREADY**
+
+连接已存在\(connection already in progress\)
+
+**UV\_EBADF**
+
+\(\)bad 
+
