@@ -34,5 +34,17 @@
 
 **UV\_EAGAIN**
 
-\(resource temporarily unavailable\)
+资源暂不可用\(resource temporarily unavailable\)
+
+**UV\_EAI\_ADDRFAMILY**
+
+地址族不被支持\(address family not supported\)
+
+**UV\_EAI\_AGAIN**
+
+暂时失败\(temporary failure\)
+
+**UV\_EAI\_BADFLAGS**
+
+ai\_flags值有误\(bad ai\_flags value\)
 
