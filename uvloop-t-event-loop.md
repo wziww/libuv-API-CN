@@ -157,5 +157,5 @@ int uv_backend_timeout(const uv_loop_t* loop)
 uint64_t uv_now(const uv_loop_t* loop)
 ```
 
-返回当前时间戳\(毫秒级\)
+返回当前时间戳\(毫秒级\). 时间戳会在轮询开始的时候被缓存, 详情及原因查看 uv\_update\_time\(\)
 
