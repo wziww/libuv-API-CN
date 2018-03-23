@@ -84,7 +84,7 @@ uv_loop_t* uv_default_loop(void)
 loop 可以\(并且应该\)通过 uv\_loop\_close\(\) 来关闭， 因此可以释放分配给它的资源.
 
 ```
-Warning:该函数不是线程安全的.
+**Warning:该函数不是线程安全的.**
 ```
 
 > nodejs中使用了默认的loop作为自己的主loop。如果你在编写nodejs的绑定，你应该注意一下。
