@@ -6,11 +6,11 @@
 
 **uv\_loop\_t**
 
-         Loop的数据类型
+Loop的数据类型
 
 **uv\_run\_mode**
 
- Loop运行方式 \\(枚举类型\\)  用作运行loop   通过调用函数 uv\\_run\\(\\)
+Loop运行方式 \\(枚举类型\\)  用作运行loop   通过调用函数 uv\\_run\\(\\)
 
 ```cpp
 typedef enum {
