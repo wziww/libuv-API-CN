@@ -103,7 +103,15 @@ int uv_run(uv_loop_t* loop, uv_run_mode mode)
 
 * **UV\_RUN\_ONCE:          **轮询 I/O 一次. 注意, 该函数**会被**阻塞如果没有等待执行的回调函数. 当执行完毕后返回 zero \(没有活动引用句柄或者请求\), non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool\).
 
-* **UV\_RUN\_NOWAIT:     **轮询 I/O 一次. 但当没有待执行的回调时, **不会被**阻塞. 当结束时\(没有活动应用句柄或者请求\)返回 zero ,non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool\).
+* **UV\_RUN\_NOWAIT:     **轮询 I/O 一次. 但当没有待执行的回调时, **不会被**阻塞. 当结束时\(没有活动引用句柄或者请求\)返回 zero ,non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool\).
 
+---
 
+```cpp
+int uv_loop_alive(const uv_loop_t* loop)
+```
+
+当 loop 中仍有活动引用句柄, 活跃的请求 或者 正在关闭句柄的时候, 返回一个non-zero.
+
+---
 
