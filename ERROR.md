@@ -132,6 +132,28 @@ socket类别不支持\(socket type not supported\)
 
 文件已存在\(file already exists\)
 
+**UV\_EFAULT**
+
+错误地址在系统调用参数中\(bad address in system call argument\)
+
+**UV\_EFBIG**
+
+文件过大\(file too large\)
+
+**UV\_EHOSTUNREACH**
+
+主机无法访问\(host is unreachable\)
+
+**UV\_EINTR**
+
+系统调用中断\(interrupted system call\)
+
+**UV\_EINVAL**
+
+无效参数\(invalid argument\)
+
+
+
 ...
 
 # API
