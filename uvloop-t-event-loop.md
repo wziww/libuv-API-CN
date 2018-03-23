@@ -101,9 +101,9 @@ int uv_run(uv_loop_t* loop, uv_run_mode mode)
 
 * **UV**\_**RUNDEFAULT:      **event pool 将会运行直到没有更多的活动引用句柄或请求. 返回non-zero 如果调用了 uv\_stop\(\) 并且仍然有活动引用句柄或者请求, 其他情况返回 zero.
 
-* **UV\_RUN\_ONCE:          **轮询 I/O 一次. 注意, 该函数**会被**阻塞如果没有等待执行的回调函数. 当执行完毕后返回 zero \(没有活动引用句柄或者请求\), non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool\).
+* **UV\_RUN\_ONCE:          **轮询 I/O 一次. 注意, 该函数**会被**阻塞如果没有等待执行的回调函数. 当执行完毕后返回 zero \(没有活动引用句柄或者请求\), non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool \).
 
-* **UV\_RUN\_NOWAIT:     **轮询 I/O 一次. 但当没有待执行的回调时, **不会被**阻塞. 当结束时\(没有活动引用句柄或者请求\)返回 zero ,non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool\).
+* **UV\_RUN\_NOWAIT:     **轮询 I/O 一次. 但当没有待执行的回调时, **不会被**阻塞. 当结束时\(没有活动引用句柄或者请求\)返回 zero ,non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool \).
 
 ---
 
@@ -120,4 +120,12 @@ void uv_stop(uv_loop_t* loop)
 ```
 
 停止 event loop, 让 uv\_run\(\) 能够尽快结束,  发生于**不早于**下次 loop 迭代. 如果该函数调用发生在 I/O 阻塞之前,  loop 将不会在此次迭代中发生阻塞.
+
+---
+
+```cpp
+size_t uv_loop_size(void)
+```
+
+返回 uv\_loop_\__t 结构的大小. 对于不想知道该结构设计的 FFI binding writers 非常有用
 
