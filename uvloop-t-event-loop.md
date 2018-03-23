@@ -55,5 +55,13 @@ loop配置函数 需在 第一次调用uv\_run\(\) 前调用 除非额外提及
 
 成功的时候返回值为 0 ，失败的时候返回值为 UV\_E\* 错误码. 准备好处理UV\_ENOSYS; 它意味着loop option 不被平台支持.
 
+### Supported options:
+
+* **UV\_LOOP\_BLOCK\_SIGNAL: **在轮询新事件时阻塞信号,uv\_loop\_configure\(\) 函数的第二个参数就是信号量.
+
+        这个操作当前仅支持SIGPROF信号. 使用sampling profiler去抑制不必要的唤醒. 使用其他信号量将会以 UV\_EINVAL  \(详见[Error  handing](/ERROR.md "跳转点我")章节\)
+
+        作为失败的返回.
+
 
 
