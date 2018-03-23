@@ -151,3 +151,11 @@ int uv_backend_timeout(const uv_loop_t* loop)
 
 获取轮询超时时间. 返回值以毫秒为单位, 或者如果没有超时的话返回 -1.
 
+---
+
+```cpp
+uint64_t uv_now(const uv_loop_t* loop)
+```
+
+返回当前时间戳\(毫秒级\)
+
