@@ -268,6 +268,18 @@ socket的协议类型错误\(protocol wrong type for socket\)
 
 结果过大\(result too large\)
 
+**UV\_EROFS**
+
+只读文件系统\(read-only file system\)
+
+**UV\_ESHUTDOWN**
+
+不能在传输终端关闭后进行发送\(cannot send after transport endpoint shutdown\)
+
+**UV\_ESPIPE**
+
+无效的寻找\(invalid seek\)
+
 ...
 
 # API
