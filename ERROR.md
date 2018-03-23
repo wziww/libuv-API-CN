@@ -134,7 +134,7 @@ socket类别不支持\(socket type not supported\)
 
 ## API
 
-```
+```cpp
 const char* uv_strerror(int err)
 ```
 
@@ -146,8 +146,6 @@ Leaks a few bytes of memory when you call it with an unknown error code.
 uv_strerror(UV_EEXIST);
 //file already exists
 ```
-
-
 
 
 
