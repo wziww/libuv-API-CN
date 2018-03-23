@@ -80,5 +80,7 @@ ai族不被支持\(ai\_family not supported\)
 
 参数buffer溢出\(argument buffer overflow\)
 
+**UV\_EAI\_PROTOCOL**
 
+未知的解决协议\(resolved protocol is unknown\)
 
