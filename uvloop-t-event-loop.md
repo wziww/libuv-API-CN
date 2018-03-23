@@ -36,5 +36,12 @@ typedef enum {
 int uv_loop_init(uv_loop_t* loop)
 ```
 
+初始化给定的 _`uv_loop_t`_结构
+
+```cpp
+uv_loop_t *loop = new uv_loop_t();
+uv_loop_init(loop);
+```
+
 
 
