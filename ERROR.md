@@ -161,3 +161,16 @@ const char* uv_err_name(int err)
 
 当使用未定义的错误码时, 会泄露几个bytes的内存.
 
+```cpp
+uv_err_name(UV_EEXIST);
+//EEXIST
+```
+
+### uv\_translate\_sys\_error
+
+```
+
+```
+
+
+
