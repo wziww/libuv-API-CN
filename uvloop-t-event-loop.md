@@ -127,5 +127,13 @@ void uv_stop(uv_loop_t* loop)
 size_t uv_loop_size(void)
 ```
 
-返回 uv\_loop_\__t 结构的大小. 对于不想知道该结构设计的 FFI binding writers 非常有用
+返回 uv\_loop\_\_\_t 结构的大小. 对于不想知道该结构设计的 FFI binding writers 非常有用
+
+---
+
+```cpp
+int uv_backend_fd(const uv_loop_t* loop)
+```
+
+
 
