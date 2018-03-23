@@ -99,8 +99,15 @@ int uv_run(uv_loop_t* loop, uv_run_mode mode)
 
 该函数运行 event loop .根据不同的指定模式会采取不同的执行方式:
 
-* **UV**\_**RUNDEFAULT: **event pool 将会运行直到没有更多的活动引用句柄或请求. 返回non-zero 如果调用了 uv\_stop\(\) 并且仍然有活动引用句柄或者请求, 其他情况返回 zero.
-* **UV\_RUN\_ONCE: **轮询I/O一次. 注意, 该函数会被锁住如果没有等待执行的回调函数. 当执行完毕后返回zero\(没有活动引用句柄或者请求\), non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool\).
+* **UV**\_**RUNDEFAULT:      **event pool 将会运行直到没有更多的活动引用句柄或请求. 返回non-zero 如果调用了 uv\_stop\(\) 并且仍然有活动引用句柄或者请求, 其他情况返回 zero.
 
- 
+
+
+* **UV\_RUN\_ONCE:          **轮询I/O一次. 注意, 该函数会被阻塞如果没有等待执行的回调函数. 当执行完毕后返回zero\(没有活动引用句柄或者请求\), non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool\).
+
+
+
+* **UV\_RUN\_NOWAIT:     **轮询I/O一次
+
+
 
