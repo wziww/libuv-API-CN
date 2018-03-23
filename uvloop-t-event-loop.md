@@ -12,7 +12,7 @@
 
 **uv\_run\_mode**
 
-         Loop运行方式 \(枚举类型\)  用作运行loop   _通过调用函数_[_uv\_run\(\)_](http://docs.libuv.org/en/v1.x/loop.html#c.uv_run)
+     Loop运行方式 \(枚举类型\)  用作运行loop   通过调用函数 uv\_run\(\)
 
 ```cpp
 typedef enum {
