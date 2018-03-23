@@ -135,5 +135,5 @@ size_t uv_loop_size(void)
 int uv_backend_fd(const uv_loop_t* loop)
 ```
 
-获取后端文件描述符. 仅支持 kqueue,epoll 和 event ports
+获取 backend 文件描述符. 仅支持 kqueue,epoll 和 event ports
 
