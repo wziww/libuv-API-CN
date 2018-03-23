@@ -152,7 +152,15 @@ socket类别不支持\(socket type not supported\)
 
 无效参数\(invalid argument\)
 
+**UV\_EIO**
 
+I/O错误\(i/o error\)
+
+**UV\_EISCONN**
+
+socket连接已存在\(socket is already connected\)
+
+**UV\_EISDIR**
 
 ...
 
