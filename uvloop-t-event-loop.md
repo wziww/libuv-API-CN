@@ -45,9 +45,7 @@ uv_loop_t *loop = new uv_loop_t();
 uv_loop_init(loop);
 ```
 
-=
+===
 
 int uv\_loop\_configure\(uv\_loop\_t\* loop, uv\_loop\_option option, ...\)
-
-
 
