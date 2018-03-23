@@ -4,15 +4,15 @@
 
 ### 数据类型
 
-
-
 **uv\_loop\_t**
 
-             Loop的数据类型
+```
+         Loop的数据类型
+```
 
 **uv\_run\_mode**
 
-             Loop运行方式 \(_枚举类型 \)  _用作运行loop   通过[uv\_run\(\)](http://docs.libuv.org/en/v1.x/loop.html#c.uv_run)函数
+         Loop运行方式 \(枚举类型\)  用作运行loop   _通过调用函数_[_uv\_run\(\)_](http://docs.libuv.org/en/v1.x/loop.html#c.uv_run)
 
 ```cpp
 typedef enum {
