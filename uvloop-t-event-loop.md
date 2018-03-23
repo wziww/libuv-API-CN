@@ -20,11 +20,15 @@ typedef enum {
 } uv_run_mode;
 ```
 
-void \(\*uv\_walk\_cb\)\(uv\_handle\_t\* handle, void\* arg\)
+#### void \(\*uv\_walk\_cb\)\(uv\_handle\_t\* handle, void\* arg\)
 
 传递给uv\_walk\(\)的回调函数的类型定义
 
 ### Public members
+
+#### void\*uv\_loop\_t.data
+
+用户定义数据的空间. libuv 不会使用并且不会干预这块区域
 
 
 
