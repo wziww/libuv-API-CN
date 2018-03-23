@@ -100,13 +100,13 @@ Warning:该函数不是线程安全的.
 int uv_run(uv_loop_t* loop, uv_run_mode mode)
 ```
 
-该函数运行 event loop .根据不同的指定模式会采取不同的执行方式:
+该函数运行 event loop 。根据不同的指定模式会采取不同的执行方式:
 
-* **UV**\_**RUNDEFAULT:      **event pool 将会运行直到没有更多的活动引用句柄或请求. 返回non-zero 如果调用了 uv\_stop\(\) 并且仍然有活动引用句柄或者请求, 其他情况返回 zero.
+* **UV**\_**RUNDEFAULT:      **event pool 将会运行直到没有更多的活动引用句柄或请求。返回non-zero 如果调用了 uv\_stop\(\) 并且仍然有活动引用句柄或者请求，其他情况返回 zero。
 
-* **UV\_RUN\_ONCE:          **轮询 I/O 一次. 注意, 该函数**会被**阻塞如果没有等待执行的回调函数. 当执行完毕后返回 zero \(没有活动引用句柄或者请求\), non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool \).
+* **UV\_RUN\_ONCE:          **轮询 I/O 一次. 注意, 该函数**会被**阻塞如果没有等待执行的回调函数. 当执行完毕后返回 zero \(没有活动引用句柄或者请求\), non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool \)。
 
-* **UV\_RUN\_NOWAIT:     **轮询 I/O 一次. 但当没有待执行的回调时, **不会被**阻塞. 当结束时\(没有活动引用句柄或者请求\)返回 zero ,non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool \).
+* **UV\_RUN\_NOWAIT:     **轮询 I/O 一次. 但当没有待执行的回调时, **不会被**阻塞. 当结束时\(没有活动引用句柄或者请求\)返回 zero ，non-zero 当仍然有回调函数等待被执行\(意味着你以后需要应该再次运行 event pool \)。
 
 ---
 
@@ -114,7 +114,7 @@ int uv_run(uv_loop_t* loop, uv_run_mode mode)
 int uv_loop_alive(const uv_loop_t* loop)
 ```
 
-当 loop 中仍有活动引用句柄, 活跃的请求 或者 正在关闭句柄的时候, 返回一个non-zero.
+当 loop 中仍有活动引用句柄, 活跃的请求 或者 正在关闭句柄的时候, 返回一个non-zero。
 
 ---
 
@@ -122,7 +122,7 @@ int uv_loop_alive(const uv_loop_t* loop)
 void uv_stop(uv_loop_t* loop)
 ```
 
-停止 event loop, 让 uv\_run\(\) 能够尽快结束,  发生于**不早于**下次 loop 迭代. 如果该函数调用发生在 I/O 阻塞之前,  loop 将不会在此次迭代中发生阻塞.
+停止 event loop，让 uv\_run\(\) 能够尽快结束，发生于**不早于**下次 loop 迭代。如果该函数调用发生在 I/O 阻塞之前，loop 将不会在此次迭代中发生阻塞。
 
 ---
 
@@ -138,9 +138,9 @@ size_t uv_loop_size(void)
 int uv_backend_fd(const uv_loop_t* loop)
 ```
 
-获取 backend 文件描述符. 仅支持 kqueue,epoll 和 event ports.
+获取 backend 文件描述符。 仅支持 kqueue,epoll 和 event ports。
 
-可与 uv\_run\_\(loop,UV\_RUN\_NOWAIT\) 结合使用在一个线程中轮询, 其他中执行 event loop 的回调. 案例可看 test/test-embed.c文件.
+可与 uv\_run\_\(loop,UV\_RUN\_NOWAIT\) 结合使用在一个线程中轮询，其他中执行 event loop 的回调. 案例可看 test/test-embed.c文件。
 
 ```ruby
 Note: 嵌入一个 kqueue fd 进 另一个 kqueue pollset 并不能在所有平台都能正常使用. 这不是一个添加 fd 的错误 它从不生成 events.
@@ -152,7 +152,7 @@ Note: 嵌入一个 kqueue fd 进 另一个 kqueue pollset 并不能在所有平�
 int uv_backend_timeout(const uv_loop_t* loop)
 ```
 
-获取轮询超时时间. 返回值以毫秒为单位, 或者如果没有超时的话返回 -1.
+获取轮询超时时间. 返回值以毫秒为单位, 或者如果没有超时的话返回 -1。
 
 ---
 
@@ -160,9 +160,9 @@ int uv_backend_timeout(const uv_loop_t* loop)
 uint64_t uv_now(const uv_loop_t* loop)
 ```
 
-返回当前时间戳\(毫秒级\). 时间戳会在轮询开始的时候被缓存, 详情及原因查看 uv\_update\_time\(\)
+返回当前时间戳\(毫秒级\)。时间戳会在轮询开始的时候被缓存，详情及原因查看 uv\_update\_time\(\)
 
-时间戳从某个任意时间点单调递增. 不要对出发点做假设,  得到的只会是个失望结果
+时间戳从某个任意时间点单调递增。不要对出发点做假设，得到的只会是个失望结果。
 
 ```ruby
 Note: 使用 uv_hrtime() 如果需要获得的亚毫秒时间
@@ -174,7 +174,7 @@ Note: 使用 uv_hrtime() 如果需要获得的亚毫秒时间
 void uv_update_time(uv_loop_t* loop)
 ```
 
-更新 event loop 的对于"当前"的时间概念. Libuv 在event loop 轮询开始的时候缓存当前时间一遍减少时间相关的系统的调用次数.
+更新 event loop 的对于"当前"的时间概念。Libuv 在event loop 轮询开始的时候缓存当前时间一遍减少时间相关的系统的调用次数。
 
-
+你通常不需要调用此函数，除非你有回调阻塞 event loop 较长时间，“长”在某种程度上是主观的，但可能是毫秒或以上的顺序。
 
