@@ -3,7 +3,7 @@
 
 # uv\_loop\_t -- Event loop
 
-> 事件循环\(Event loop\)是libuv功能的中心, libuv 提供了一套事件循环和基于I/O\(或其他活动\)通知的回调函数.
+> 事件循环\(Event loop\)是 libuv 功能的中心，libuv 提供了一套事件循环和基于I/O\(或其他活动\)通知的回调函数。
 
 ## 数据类型
 
@@ -25,13 +25,13 @@ typedef enum {
 
 #### void \(\*uv\_walk\_cb\)\(uv\_handle\_t\* handle, void\* arg\)
 
-传递给uv\_walk\(\)的回调函数的类型定义
+传递给 uv\_walk\(\) 的回调函数的类型定义
 
 ### Public members
 
 #### void\*uv\_loop\_t.data
 
-用户定义数据的空间. libuv 不会使用并且不会干预这块区域
+用户定义数据的空间。libuv 不会使用并且不会干预这块区域
 
 ## API
 
@@ -56,15 +56,15 @@ int uv_loop_configure(uv_loop_t* loop, uv_loop_option option, ...)
 
 loop配置函数 需在 第一次调用uv\_run\(\) 前调用 除非额外提及
 
-成功的时候返回值为 0 ，失败的时候返回值为 UV\_E\* 错误码. 准备好处理UV\_ENOSYS; 它意味着loop option 不被平台支持.
+成功的时候返回值为 0，失败的时候返回值为 UV\_E\* 错误码。准备好处理UV\_ENOSYS，它意味着loop option 不被平台支持。
 
 ### Supported options:
 
-* **UV\_LOOP\_BLOCK\_SIGNAL: **在轮询新事件时阻塞信号,uv\_loop\_configure\(\) 函数的第二个参数就是信号量.
+* **UV\_LOOP\_BLOCK\_SIGNAL: **在轮询新事件时阻塞信号，uv\_loop\_configure\(\) 函数的第二个参数就是信号量。
 
-  这个操作当前仅支持SIGPROF信号. 使用sampling profiler去抑制不必要的唤醒. 使用其他信号量将会以 [UV\_EINVAL](/ERROR.md)
+  这个操作当前仅支持SIGPROF信号。使用sampling profiler去抑制不必要的唤醒。使用其他信号量将会以 [UV\_EINVAL](/ERROR.md)
 
-  作为失败的返回.
+  作为失败的返回。
 
 ---
 
@@ -84,10 +84,10 @@ uv_loop_t* uv_default_loop(void)
 
 该函数是获得在整个应用中全局性 loop 的一个便捷方法, 默认的 loop 与通过调用 uv\_loop\_\_\_init\(\) 生成的 loop 是没啥不同的, 默认
 
-loop 可以\(并且应该\)通过 uv\_loop\_close\(\) 来关闭， 因此可以释放分配给它的资源.
+loop 可以\(并且应该\)通过 uv\_loop\_close\(\) 来关闭， 因此可以释放分配给它的资源。
 
 ```css
-Warning:该函数不是线程安全的.
+Warning:该函数不是线程安全的
 ```
 
 > nodejs中使用了默认的loop作为自己的主loop。如果你在编写nodejs的绑定，你应该注意一下。
