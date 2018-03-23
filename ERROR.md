@@ -212,6 +212,54 @@ socket连接已存在\(socket is already connected\)
 
 设备不在网络中\(machine is not on the network\)
 
+**UV\_ENOPROTOOPT**
+
+协议不可用\(protocol not available\)
+
+**UV\_ENOSPC**
+
+设备空间不足\(no space left on device\)
+
+**UV\_ENOSYS**
+
+函数未实现\(function not implemented\)
+
+**UV\_ENOTCONN**
+
+socket未连接\(socket is not connected\)
+
+**UV\_ENOTDIR**
+
+不是一个目录\(not is directory\)
+
+**UV\_ENOTEMPTY**
+
+目录不为空\(directory not empty\)
+
+**UV\_ENOTSOCK**
+
+在非socket上进行的socket操作\(socket operation on non-socket\)
+
+**UV\_ENOTSUP**
+
+操作在socket上不被支持\(operation not supported on socket\)
+
+**UV\_EPERM**
+
+操作不被允许\(operation not permitted\)
+
+**UV\_EPIPE**
+
+断开的管道\(broken pipe\)
+
+**UV\_EPROTO**
+
+协议错误\(protocol error\)
+
+**UV\_EPROTONOSUPPORT**
+
+协议不支持\(protocol not supported\)
+
 
 
 ...
