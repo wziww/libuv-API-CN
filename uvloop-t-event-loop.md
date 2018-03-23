@@ -208,5 +208,9 @@ int uv_loop_fork(uv_loop_t* loop)
 
 **注意：该函数处于试验阶段。可能会存在一些bugs，可能会改变或者被移除，稳定性不作保证。**
 
+```
+Note：在 Mac OS X 系统上，如果目录的文件句柄在父进程的任意 event loop 使用了，子进程将不能去使用最有效的 FSEvent 实施。
+```
+
 
 
