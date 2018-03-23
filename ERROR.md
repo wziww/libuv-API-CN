@@ -124,3 +124,11 @@ socket类别不支持\(socket type not supported\)
 
 对等点连接复位\(connection reset by peer\)
 
+**UV\_EDESTADDRREQ**
+
+缺少目标地址\(destination address required\)
+
+**UV\_EEXIST**
+
+文件已存在\(file already exists\)
+
