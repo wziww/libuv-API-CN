@@ -132,6 +132,8 @@ socket类别不支持\(socket type not supported\)
 
 文件已存在\(file already exists\)
 
+...
+
 # API
 
 ### uv\_strerror
