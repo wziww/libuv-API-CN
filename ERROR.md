@@ -12,23 +12,25 @@
 
 ## 错误常量
 
+##### UV\_E2BIG
 
-
-##### UV\_E2BIG \(常量 下同\)
-
-参数列表过长
+参数列表过长\(argument list too long\)
 
 ##### UV\_EACCES
 
-权限拒绝
+权限拒绝\(permission denied\)
 
 **UV\_EADDRINUSE**
 
-地址已被使用
+地址已被使用\(address already in use\)
 
+**UV\_EADDRNOTAVAIL**
 
+地址不可用\(address not available\)
 
+**UV\_EAFNOSUPPORT**
 
+地址族不被支持\(address family not supported\)
 
-
+**UV\_EAGAIN**
 
