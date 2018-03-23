@@ -60,3 +60,25 @@ ai\_flags值有误\(bad ai\_flags value\)
 
 永久失败（permanent failure）
 
+**UV\_EAI\_FAMILY**
+
+ai族不被支持\(ai\_family not supported\)
+
+**UV\_EAI\_MEMORY**
+
+内存不足\(out of memory\)
+
+**UV\_EAI\_NODATA**
+
+没有地址\(no address\)
+
+**UV\_EAI\_NONAME**
+
+未知的节点或服务\(unknown node or service\)
+
+**UV\_EAI\_OVERFLOW**
+
+参数buffer溢出\(argument buffer overflow\)
+
+
+
