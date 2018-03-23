@@ -2,7 +2,7 @@
 
 > 事件循环\(Event loop\)是libuv功能的中心, libuv 提供了一套事件循环和基于I/O\(或其他活动\)通知的回调函数.
 
-### 数据类型
+## 数据类型
 
 #### **uv\_loop\_t**
 
@@ -29,6 +29,12 @@ typedef enum {
 #### void\*uv\_loop\_t.data
 
 用户定义数据的空间. libuv 不会使用并且不会干预这块区域
+
+## API
+
+```cpp
+int uv_loop_init(uv_loop_t* loop)
+```
 
 
 
