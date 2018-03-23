@@ -143,5 +143,11 @@ int uv_backend_fd(const uv_loop_t* loop)
 Note: 嵌入一个 kqueue fd 进 另一个 kqueue pollset 并不能在所有平台都能正常使用. 这不是一个添加 fd 的错误 它从不生成 events.
 ```
 
+---
 
+```cpp
+int uv_backend_timeout(const uv_loop_t* loop)
+```
+
+获取轮询超时时间. 返回值以毫秒为单位, 或者如果没有超时的话返回 -1.
 
