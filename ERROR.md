@@ -284,7 +284,33 @@ socket的协议类型错误\(protocol wrong type for socket\)
 
 进程不存在\(no such process\)
 
-...
+**UV\_ETIMEDOUT**
+
+连接超时\(connection timed out\)
+
+**UV\_ETXTBSY**
+
+test文件被占用\(text file is busy\)
+
+**UV\_EXDEV**
+
+不允许跨设备连接\(cross-device link not permitted\)
+
+**UV\_UNKNOWN**
+
+未知错误\(unknown error\)
+
+**UV\_EOF**
+
+文件尾\(end of file\)
+
+**UV\_ENXIO**
+
+不存在该设备或地址\(no such device or address\)
+
+**UV\_EMLINK**
+
+链接过多\(too many links\)
 
 # API
 
