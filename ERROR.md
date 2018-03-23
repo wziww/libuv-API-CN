@@ -98,5 +98,5 @@ socket类别不支持\(socket type not supported\)
 
 **UV\_EBADF**
 
-\(\)bad 
+错误的文件描述符\(bad file descriptor\)
 
