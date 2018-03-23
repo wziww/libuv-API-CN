@@ -186,3 +186,15 @@ void uv_walk(uv_loop_t* loop, uv_walk_cb walk_cb, void* arg)
 
 在轮询中传递句柄，walk\_cb 将会被执行（arg为提供参数）。
 
+---
+
+```cpp
+int uv_loop_fork(uv_loop_t* loop)
+```
+
+新增于 1.12.0 版本
+
+在子进程中 fork\(2\) 系统调用后必要的初始化内核状态。
+
+之前开始的观察活动将会在子进程中继续进行。
+
