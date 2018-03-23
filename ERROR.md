@@ -94,7 +94,7 @@ socket类别不支持\(socket type not supported\)
 
 **UV\_EALREADY**
 
-连接已存在\(connection already in progress\)
+连接已存在进程中\(connection already in progress\)
 
 **UV\_EBADF**
 
@@ -279,6 +279,10 @@ socket的协议类型错误\(protocol wrong type for socket\)
 **UV\_ESPIPE**
 
 无效的寻找\(invalid seek\)
+
+**UV\_ESRCH**
+
+进程不存在\(no such process\)
 
 ...
 
