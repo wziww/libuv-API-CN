@@ -63,3 +63,11 @@ uv_loop_t* uv_handle_t.loop
 
 指向句柄正在运行的 uv\_loop\_t 的指针。 \(只读\)
 
+---
+
+```cpp
+uv_handle_type uv_handle_t.type
+```
+
+uv\_handle\_type，指示底层句柄的类型。\(只读\)
+
