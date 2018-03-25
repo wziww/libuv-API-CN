@@ -87,7 +87,7 @@ int uv_is_active(const uv_handle_t* handle)
 
 当句柄是活跃的时候返回 non-zero，不活跃时返回 zero。 “活跃”状态的定义依赖于句柄的类型：
 
-* uv\_async_t _句柄总是活跃的，并且不能被“不活跃化”，通过 uv\_close\(\) 来关闭。
+* uv\_async\_t_ _句柄总是活跃的，并且不能被“不活跃化”，通过 uv\_close\(\) 来关闭。
 
 
 
