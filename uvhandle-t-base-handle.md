@@ -57,5 +57,9 @@ void (*uv_alloc_cb)(uv_handle_t* handle, size_t suggested_size, uv_buf_t* buf)
 
 ## 共有成员
 
+```cpp
+uv_loop_t* uv_handle_t.loop
+```
 
+指向句柄正在运行的 uv\_loop\_t 的指针。 \(只读\)
 
