@@ -45,5 +45,7 @@ typedef enum {
 } uv_handle_type;
 ```
 
+**uv\_any\_handle**
 
+所有句柄类型的union
 
