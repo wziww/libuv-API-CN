@@ -71,3 +71,11 @@ uv_handle_type uv_handle_t.type
 
 uv\_handle\_type，指示底层句柄的类型。\(只读\)
 
+---
+
+```cpp
+void* uv_handle_t.data
+```
+
+用户定义的数据的存储空间。libuv 不实用这个区域。
+
