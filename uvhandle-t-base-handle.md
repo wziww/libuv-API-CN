@@ -13,5 +13,37 @@ Libuv 的句柄是不可移动的。传递给函数的句柄结构指针必须�
 
 ## 数据类型
 
+**uv\_handle\_t**
+
+libuv 基础句柄类型。
+
+**uv\_handle\_type**
+
+libuv 操作句柄类型。
+
+```cpp
+typedef enum {
+  UV_UNKNOWN_HANDLE = 0,
+  UV_ASYNC,
+  UV_CHECK,
+  UV_FS_EVENT,
+  UV_FS_POLL,
+  UV_HANDLE,
+  UV_IDLE,
+  UV_NAMED_PIPE,
+  UV_POLL,
+  UV_PREPARE,
+  UV_PROCESS,
+  UV_STREAM,
+  UV_TCP,
+  UV_TIMER,
+  UV_TTY,
+  UV_UDP,
+  UV_SIGNAL,
+  UV_FILE,
+  UV_HANDLE_TYPE_MAX
+} uv_handle_type;
+```
+
 
 
