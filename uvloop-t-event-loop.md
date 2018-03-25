@@ -1,7 +1,7 @@
 
 ---
 
-# uv\_loop\_t -- Event loop
+# uv\_loop\_t - Event loop
 
 > 事件循环\(Event loop\)是 libuv 功能的中心，libuv 提供了一套事件循环和基于I/O\(或其他活动\)通知的回调函数。
 
