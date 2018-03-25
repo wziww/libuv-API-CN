@@ -81,5 +81,9 @@ void* uv_handle_t.data
 
 ## API
 
+```cpp
+int uv_is_active(const uv_handle_t* handle)
+```
+
 
 
