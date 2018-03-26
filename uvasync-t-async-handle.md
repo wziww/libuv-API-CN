@@ -47,5 +47,11 @@ int uv_async_send(uv_async_t* async)
 
 > **Note：**线程安全，回调会在 loop 的线程被调用。
 
+---
+
+> See also
+>
+> The[`uv_handle_t`](http://docs.libuv.org/en/v1.x/handle.html#c.uv_handle_t)API functions also apply.
+
 
 
