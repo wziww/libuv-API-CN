@@ -14,4 +14,5 @@
 * [uv\_timer\_t — Timer handle](uvtimer-t-timer-handle.md)
 * [uv\_prepare\_t — Prepare handle](uvprepare-t-prepare-handle.md)
 * [uv\_check\_t — Check handle](uvcheck-t-check-handle.md)
+* [uv\_idle\_t — Idle handle](uvidle-t-idle-handle.md)
 
