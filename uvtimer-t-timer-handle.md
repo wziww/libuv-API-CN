@@ -61,3 +61,15 @@ int uv_timer_again(uv_timer_t* handle)
 
 停止 timer，如果重复重启，使用 repeat 的值作为timeout，如果 timer 之前没有被 start 过，返回错误码：UV\_EINVAL。
 
+---
+
+```cpp
+void uv_timer_set_repeat(uv_timer_t* handle, uint64_t repeat)
+```
+
+以毫秒级设置重复间隔时间，timer 将会根据该值进行定期执行。不管回调执行时间，and will follow normal timer semantics in the case of a time-slice overrun.
+
+例如，有个 50 ms 间隔的计时器，执行了 17 ms，它将会在 33 ms 后再次执行。如果其他任务使用了超过 33 ms（在初次调用回调后），那么，这个回调会尽可能快的再次被调用。
+
+
+
