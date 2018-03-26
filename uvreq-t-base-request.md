@@ -81,3 +81,13 @@ size_t uv_req_size(uv_req_type type)
 
 返回给定请求类型的大小，对..FFI....特别有用。
 
+---
+
+```cpp
+void* uv_req_get_data
+```
+
+返回 req-&gt;data。
+
+新增于 1.19.0 版本。
+
