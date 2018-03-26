@@ -15,5 +15,11 @@ Timer handle 类型。
 void (*uv_timer_cb)(uv_timer_t* handle)
 ```
 
-传递给 uv\__timer_\_start\(\) 的回调函数的类型定义
+传递给 uv\__timer_\_start\(\) 的回调函数的类型定义。
+
+## 公有成员
+
+> 同 [uv\_handle\_t](/uvreq-t-base-request.md)
+
+
 
