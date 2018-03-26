@@ -101,5 +101,9 @@ int uv_is_active(const uv_handle_t* handle)
 int uv_is_closing(const uv_handle_t* handle)
 ```
 
+句柄为正在关闭或者已关闭的时候返回 non-zero，否则返回 zero。
+
+> **Note：该函数只应在句柄初始化之后和关闭之前调用。**
+
 
 
