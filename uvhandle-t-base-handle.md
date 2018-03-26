@@ -87,7 +87,7 @@ int uv_is_active(const uv_handle_t* handle)
 
 当句柄是活跃的时候返回 non-zero，不活跃时返回 zero。 “活跃”状态的定义依赖于句柄的类型：
 
-* uv\_async\_t_ _句柄总是活跃的，并且不能被“不活跃化”，通过 uv\_close\(\) 来关闭。
+* uv\_async\_t 句柄总是活跃的，并且不能被“不活跃化”，通过 uv\_close\(\) 来关闭。
 
 * uv\_pipe\_t，uv\_tcpt，uv\_udp\_t 等等。基础的 I/O 操作在进行 I/O  的时候，例如读、写、连接、接受新连接等等的时候，是活跃的。
 
@@ -115,7 +115,7 @@ void uv_close(uv_handle_t* handle, uv_close_cb close_cb)
 
 操作文件描述符关闭函数会立即执行，但是close\_cb会在下一次 event loop 的时候被调用，这让你有机会去释放该句柄占用的资源。
 
-进行中的请求，诸如 uv\_connectt 或者 uv\_write_t，_以状态为UV\_ECANCELED取消它们的异步回调。
+进行中的请求，诸如 uv\_connectt 或者 uv\_writet，以状态为UV\_ECANCELED取消它们的异步回调。
 
 ---
 
@@ -151,5 +151,5 @@ size_t uv_handle_size(uv_handle_type type)
 
 ## Miscellaneous API functions
 
-下面的一些 API 函数 比如 uv\__handle_\_t 是具有争议的，但是他们仅对一些类别的举报有效。
+下面的一些 API 函数 比如 uv\_handle\_t 是具有争议的，但是他们仅对一些类别的举报有效。
 
