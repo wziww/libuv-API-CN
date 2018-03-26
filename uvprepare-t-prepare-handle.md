@@ -7,5 +7,17 @@
 
 ## 数据类型
 
+```
+uv_prepare_t
+```
+
+准备句柄类型。
+
+```cpp
+void (*uv_prepare_cb)(uv_prepare_t* handle)
+```
+
+传递给 uv\_prepare\_start\(\) 的回调函数的类型定义。
+
 
 
