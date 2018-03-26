@@ -56,5 +56,13 @@ typedef enum {
 
 ## API
 
+```cpp
+int uv_cancel(uv_req_t* req)
+```
 
+取消等待中的请求。如果请求已经或者正在执行，将会失败。
+
+成功返回 0，失败返回小于 0 的一个错误码。
+
+当前支持取消的请求为：uv\_fs\_t，uv\_getaddrinfo\_t，uv\_getnameinfo\_t，和 uv\_work\_t。
 
