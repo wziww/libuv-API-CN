@@ -23,5 +23,9 @@ libuv 请求结构基类
 
 ## 公有成员
 
+```cpp
+void* uv_req_t.data
+```
 
+用户自定义的数据空间。libuv 不使用。
 
