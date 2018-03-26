@@ -15,5 +15,9 @@ Poll handles 的目的是让依赖于 event loop 的外部库能够在 socket �
 
 fd 可以通过调用 uv\_poll\_stop\(\) 或者 uv\_close\(\) 来进行安全的立刻关闭。
 
-.
+## 数据类型
+
+uv\_poll\_t
+
+poll 的操作类型。
 
