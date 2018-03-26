@@ -9,7 +9,13 @@ uv\_req\_t 是所有 libuv 请求类的基类。
 
 ## Data types
 
+### uv\_req\_t
 
+libuv 请求结构基类
+
+### uv\_any\_req
+
+所有请求类的 Union
 
 
 
