@@ -45,5 +45,11 @@ repeat 毫秒后重复执行。
 >
 > 如果 timer 已经被激活。它就已经是被更新的了。
 
+---
 
+```cpp
+int uv_timer_stop(uv_timer_t* handle)
+```
+
+停止 timer。回调函数不再会被调用。
 
