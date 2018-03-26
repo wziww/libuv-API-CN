@@ -157,3 +157,25 @@ typedef enum {
 
 子进程的当前工作路径。
 
+---
+
+**uv\_process\_options\_t.flags**
+
+各种控制 uv\_spawn\(\) 运行的参数，详情查看 `uv_process_flags`。
+
+---
+
+**uv\_process\_options\_t.stdio\_count**
+
+这东西啥玩意都没写，自己猜去
+
+---
+
+**uv\_process\_options\_t.stdio**
+
+The stdio field points to an array of [`uv_stdio_container_t`](http://docs.libuv.org/en/v1.x/process.html#c.uv_stdio_container_t) structs that describe the file descriptors that will be made available to the child process. The convention is that stdio\[0\] points to stdin, fd 1 is used for stdout, and fd 2 is stderr。
+
+> **Note：**On Windows file descriptors greater than 2 are available to the child process only if the child processes uses the MSVCRT runtime.
+
+
+
