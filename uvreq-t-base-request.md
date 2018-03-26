@@ -29,3 +29,28 @@ void* uv_req_t.data
 
 用户自定义的数据空间。libuv 不使用。
 
+```cpp
+uv_req_type uv_req_t.type
+```
+
+请求类别的声明（只读）。
+
+```cpp
+typedef enum {
+    UV_UNKNOWN_REQ = 0,
+    UV_REQ,
+    UV_CONNECT,
+    UV_WRITE,
+    UV_SHUTDOWN,
+    UV_UDP_SEND,
+    UV_FS,
+    UV_WORK,
+    UV_GETADDRINFO,
+    UV_GETNAMEINFO,
+    UV_REQ_TYPE_PRIVATE,
+    UV_REQ_TYPE_MAX,
+} uv_req_type;
+```
+
+
+
