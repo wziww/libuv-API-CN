@@ -117,5 +117,17 @@ typedef enum {
 } uv_stdio_flags;
 ```
 
+## 公有成员
+
+**uv\_process\_t.pid**
+
+新产生的进程的 PID 。在 uv\_spawn\(\) 调用后被设置。
+
+> Note
+>
+> The[`uv_handle_t`](http://docs.libuv.org/en/v1.x/handle.html#c.uv_handle_t)members also apply.
+
+---
+
 
 
