@@ -89,7 +89,8 @@ int uv_is_active(const uv_handle_t* handle)
 
 * uv\_async\_t_ _句柄总是活跃的，并且不能被“不活跃化”，通过 uv\_close\(\) 来关闭。
 
-* uv\_pipe\_t
+* uv\_pipe\_t，uv\_tcpt，uv\_udp\_t 等等。基础的 I/O 操作在进行 I/O  的时候，例如读、写、连接、接受新连接等等的时候，是活跃的。
 
+* 
 
 
