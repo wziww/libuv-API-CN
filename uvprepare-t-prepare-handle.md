@@ -19,5 +19,11 @@ void (*uv_prepare_cb)(uv_prepare_t* handle)
 
 传递给 uv\_prepare\_start\(\) 的回调函数的类型定义。
 
+## 共有成员
+
+> See also
+>
+> The[`uv_handle_t`](http://docs.libuv.org/en/v1.x/handle.html#c.uv_handle_t)members also apply.
+
 
 
