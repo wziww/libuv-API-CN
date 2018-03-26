@@ -107,7 +107,19 @@ Sets req-&gt;data to data。
 uv_req_type uv_req_get_type(const uv_req_t* req)
 ```
 
-Returnsreq-&gt;type.
+Returns req-&gt;type.
+
+New in version 1.19.0.
+
+---
+
+```cpp
+const char* uv_req_type_name(uv_req_type type)
+```
+
+Returns the name for the equivalent struct for a given request type, e.g.“connect”\(as in[`uv_connect_t`](http://docs.libuv.org/en/v1.x/stream.html#c.uv_connect_t)\) forUV\_CONNECT.
+
+If no such request type exists, this returns NULL.
 
 New in version 1.19.0.
 
