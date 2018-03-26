@@ -151,5 +151,7 @@ size_t uv_handle_size(uv_handle_type type)
 
 ## Miscellaneous API functions
 
-下面的一些 API 函数 比如 uv\_handle\_t 是具有争议的，但是他们仅对一些类别的举报有效。
+下面的一些 API 函数 比如 uv\_handle\_t 是具有争议的，但是他们仅对一些类别的句柄有效。
+
+详情查看[源文档](http://docs.libuv.org/en/v1.x/handle.html#refcount)。
 
