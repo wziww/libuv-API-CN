@@ -95,3 +95,11 @@ int uv_is_active(const uv_handle_t* handle)
 
 规则：当句柄类似 uv\_foo\_t 有类似 uv\_foo\_start\(\) 函数的，当它从该函数被调用的时候被激活\(活跃\)，同样的，通过调用uv\_foo\_stop\(\)来进行让它不再活跃\(反活跃\)。
 
+---
+
+```cpp
+int uv_is_closing(const uv_handle_t* handle)
+```
+
+
+
