@@ -16,4 +16,5 @@
 * [uv\_check\_t — Check handle](uvcheck-t-check-handle.md)
 * [uv\_idle\_t — Idle handle](uvidle-t-idle-handle.md)
 * [uv\_async\_t — Async handle](uvasync-t-async-handle.md)
+* [uv\_poll\_t — Poll handl](uvpollt-poll-handl.md)
 
