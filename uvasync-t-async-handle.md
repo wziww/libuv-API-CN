@@ -25,5 +25,15 @@ void (*uv_async_cb)(uv_async_t* handle)
 
 ## API
 
+```cpp
+int uv_async_init(uv_loop_t* loop, uv_async_t* async, uv_async_cb async_cb)
+```
+
+初始化 async 操作 ，可以提供为 NULL 的callback。
+
+返回值：成功返回 0，失败返回小于 0 的错误码。
+
+> **Note：**和其他初始化函数不同的是，该初始化立刻执行句柄。
+
 
 
