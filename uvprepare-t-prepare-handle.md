@@ -25,5 +25,19 @@ void (*uv_prepare_cb)(uv_prepare_t* handle)
 >
 > The[`uv_handle_t`](http://docs.libuv.org/en/v1.x/handle.html#c.uv_handle_t)members also apply.
 
+## API
 
+```cpp
+int uv_prepare_init(uv_loop_t* loop, uv_prepare_t* prepare)
+```
+
+handle 初始化
+
+---
+
+```cpp
+int uv_prepare_start(uv_prepare_t* prepare, uv_prepare_cb cb)
+```
+
+以提供的回调函数启动 handle。
 
