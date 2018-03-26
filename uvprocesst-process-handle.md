@@ -225,3 +225,37 @@ int uv_spawn(uv_loop_t* loop, uv_process_t* handle, const uv_process_options_t* 
 
 最大的可能 spwan 失败的原因是（包括但不限于）：可执行文件不存在，用户或所在群组权限不够，或者内存不够开辟新的进程。
 
+---
+
+```cpp
+int uv_process_kill(uv_process_t* handle, int signum)
+```
+
+发送指定信号给进程 handle。具体信号可查看 [uv\_signal\_t — Signal handle](http://docs.libuv.org/en/v1.x/signal.html#signal) 文档。（尤其是Windows上）
+
+---
+
+```cpp
+int uv_kill(int pid, int signum)
+```
+
+发送指定信号给指定的PID（进程）。具体信号可查看 [uv\_signal\_t — Signal handle](http://docs.libuv.org/en/v1.x/signal.html#signal) 文档。（尤其是Windows上）
+
+---
+
+```cpp
+uv_pid_t uv_process_get_pid(const uv_process_t* handle)
+```
+
+返回指定handle的pid 。 `handle->pid`
+
+新增与1.19.0版本
+
+---
+
+> See also
+>
+> The[`uv_handle_t`](http://docs.libuv.org/en/v1.x/handle.html#c.uv_handle_t)API functions also apply.
+
+
+
