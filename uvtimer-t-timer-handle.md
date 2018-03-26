@@ -71,5 +71,21 @@ void uv_timer_set_repeat(uv_timer_t* handle, uint64_t repeat)
 
 例如，有个 50 ms 间隔的计时器，执行了 17 ms，它将会在 33 ms 后再次执行。如果其他任务使用了超过 33 ms（在初次调用回调后），那么，这个回调会尽可能快的再次被调用。
 
+> **Note：**If the repeat value is set from a timer callback it does not immediately take effect. If the timer was non-repeating before, it will have been stopped. If it was repeating, then the old repeat value will have been used to schedule the next timeout.
+
+---
+
+```cpp
+uint64_t uv_timer_get_repeat(const uv_timer_t* handle)
+```
+
+获取 计时器 repeat value。
+
+---
+
+> See also
+>
+> The[`uv_handle_t`](http://docs.libuv.org/en/v1.x/handle.html#c.uv_handle_t)API functions also apply.
+
 
 
