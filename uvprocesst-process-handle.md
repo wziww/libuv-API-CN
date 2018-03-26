@@ -129,5 +129,13 @@ typedef enum {
 
 ---
 
+**uv\_process\_options\_t.exit\_cb**
 
+进程退出后调用的回调函数。
+
+---
+
+**uv\_process\_options\_t.file**
+
+被执行程序的路径。
 
