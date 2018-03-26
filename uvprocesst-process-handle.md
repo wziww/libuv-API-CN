@@ -34,3 +34,11 @@ typedef struct uv_process_options_s {
 
 ---
 
+```cpp
+void (*uv_exit_cb)(uv_process_t*, int64_t exit_status, int term_signal)
+```
+
+没想好怎么翻译更好
+
+
+
