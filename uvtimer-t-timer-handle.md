@@ -53,3 +53,11 @@ int uv_timer_stop(uv_timer_t* handle)
 
 停止 timer。回调函数不再会被调用。
 
+---
+
+```cpp
+int uv_timer_again(uv_timer_t* handle)
+```
+
+停止 timer，如果重复重启，使用 repeat 的值作为timeout，如果 timer 之前没有被 start 过，返回错误码：UV\_EINVAL。
+
