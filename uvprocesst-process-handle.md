@@ -205,5 +205,15 @@ Libuv 可以改变子进程的 “用户/群组 id”。只有在标记字段中
 
 # API
 
+```cpp
+void uv_disable_stdio_inheritance(void)
+```
+
+禁用子进程从父进程那继承 fd / handles。产生的影响能让进程产生的子进程不意外地继承那些句柄。
+
+建议在 fd 关闭和复制之前，在程序中尽可能地早调用该方法。
+
+> **Note：**
+
 
 
