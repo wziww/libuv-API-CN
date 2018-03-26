@@ -159,5 +159,5 @@ size_t uv_handle_size(uv_handle_type type)
 
 libuv 的 event pool \(如果是用默认 mode 启用的\)，将会运行直到没有活跃的或者被 referenced 的句柄存在。使用者可以通过取消对活跃句柄的引用强制循环退出，如通过在调用 uv\_timer\_start\(\) 之后调用 uv\_unref\(\) 。
 
-一个句柄可以被引用或者取消引用，引用方案不使用计数器，所以这两个操作都是幂等的。
+一个句柄可以被引用或者取消引用，引用方案不使用计数器，所以这两个操作都是[幂等](https://baike.baidu.com/item/%E5%B9%82%E7%AD%89/8600688?fr=aladdin)的。
 
