@@ -89,5 +89,7 @@ int uv_is_active(const uv_handle_t* handle)
 
 * uv\_async\_t_ _句柄总是活跃的，并且不能被“不活跃化”，通过 uv\_close\(\) 来关闭。
 
+* uv\_pipe\_t
+
 
 
