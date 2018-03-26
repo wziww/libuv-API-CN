@@ -187,9 +187,19 @@ The stdio field points to an array of [`uv_stdio_container_t`](http://docs.libuv
 
 **uv\_process\_options\_t.gid**
 
+Libuv 可以改变子进程的 “用户/群组 id”。只有在标记字段中设置适当的位时才会发生这种情况。
 
+> **Note：**Windows 不支持，uv\_spawn\(\) 将会失败，返回 `UV_ENOTSUP`错误码。
 
-> **Note：**Windows 不支持，uv\_spawn\(\) 将会失败，返回 `UV_ENOTSUP `错误码。
+---
 
+**uv\_stdio\_container\_t.flags**
 
+指定输入输出容器如何传递给子进程的参数。详情查看`uv_stdio_flags`。
+
+---
+
+**uv\_stdio\_container\_t.data**
+
+包含传递给子进程的流或者 fd 的Union。
 
