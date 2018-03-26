@@ -117,3 +117,11 @@ void uv_close(uv_handle_t* handle, uv_close_cb close_cb)
 
 进行中的请求，诸如 uv\_connectt 或者 uv\_write_t，_以状态为UV\_ECANCELED取消它们的异步回调。
 
+---
+
+```cpp
+void uv_ref(uv_handle_t* handle)
+```
+
+
+
