@@ -17,3 +17,13 @@ void (*uv_async_cb)(uv_async_t* handle)
 
 换递给[`uv_async_init()`](http://docs.libuv.org/en/v1.x/async.html#c.uv_async_init)的回调的类型定义。
 
+## 公有成员
+
+> See also
+>
+> The[`uv_handle_t`](http://docs.libuv.org/en/v1.x/handle.html#c.uv_handle_t)members also apply.
+
+## API
+
+
+
