@@ -95,5 +95,9 @@ typedef struct uv_stdio_container_s {
 } uv_stdio_container_t;
 ```
 
+---
+
+**uv\_stdio\_flags**
+
 
 
