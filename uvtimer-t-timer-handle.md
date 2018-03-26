@@ -21,5 +21,29 @@ void (*uv_timer_cb)(uv_timer_t* handle)
 
 > 同 [uv\_handle\_t](/uvreq-t-base-request.md)
 
+## API
+
+```cpp
+int uv_timer_init(uv_loop_t* loop, uv_timer_t* handle)
+```
+
+句柄初始化
+
+---
+
+```cpp
+int uv_timer_start(uv_timer_t* handle, uv_timer_cb cb, uint64_t timeout, uint64_t repeat)
+```
+
+启用 timer。timeout 和 repeat 是毫秒级的。
+
+如果 timeout 是 0，回调函数发生在下一次 event loop 的迭代中。如果 repeat 非零，回调函数发生在下一次 timeout 毫秒后，并且在
+
+repeat 毫秒后重复执行。
+
+> **Note：**不要更新 event loop 对于 "now" 的概念。详情查看 uv\__update_\_time\(\)函数。
+>
+> 如果 timer 已经被激活。它就已经是被更新的了。
+
 
 
