@@ -66,3 +66,7 @@ int uv_cancel(uv_req_t* req)
 
 当前支持取消的请求为：uv\_fs\_t，uv\_getaddrinfo\_t，uv\_getnameinfo\_t，和 uv\_work\_t。
 
+取消请求的回调发生在之后的某个时间。在回调函数被调用之前释放相关内存是不安全的。
+
+
+
