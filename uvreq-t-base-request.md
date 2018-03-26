@@ -68,5 +68,12 @@ int uv_cancel(uv_req_t* req)
 
 取消请求的回调发生在之后的某个时间。在回调函数被调用之前释放相关内存是不安全的。
 
+下面是取消函数的回调报告方式：
+
+* uv\_fs\_t 请求将它的req-&gt;result 设置为 UV_\_ECANCELED。_
+* uv\_work\_t，uv\_getaddrinfo\_t_ 或者 _c:type:uv\_getnameinfo\_t_ 请求具有状态调为 _UV_\_ECANCELED 的回调函数_
+
+
+
 
 
