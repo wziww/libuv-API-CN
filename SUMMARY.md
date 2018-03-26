@@ -13,4 +13,5 @@
 * [uv\_req\_t — Base request](uvreq-t-base-request.md)
 * [uv\_timer\_t — Timer handle](uvtimer-t-timer-handle.md)
 * [uv\_prepare\_t — Prepare handle](uvprepare-t-prepare-handle.md)
+* [uv\_check\_t — Check handle](uvcheck-t-check-handle.md)
 
