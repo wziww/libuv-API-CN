@@ -115,3 +115,5 @@ void uv_close(uv_handle_t* handle, uv_close_cb close_cb)
 
 操作文件描述符关闭函数会立即执行，但是close\_cb会在下一次 event loop 的时候被调用，这让你有机会去释放该句柄占用的资源。
 
+进行中的请求，诸如 uv\_connectt 或者 uv\_write_t，_以状态为UV\_ECANCELED取消它们的异步回调。
+
