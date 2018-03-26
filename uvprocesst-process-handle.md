@@ -177,5 +177,19 @@ The stdio field points to an array of [`uv_stdio_container_t`](http://docs.libuv
 
 > **Note：**On Windows file descriptors greater than 2 are available to the child process only if the child processes uses the MSVCRT runtime.
 
+---
+
+**uv\_process\_options\_t.uid**
+
+巴拉巴拉巴拉巴拉
+
+---
+
+**uv\_process\_options\_t.gid**
+
+
+
+> **Note：**Windows 不支持，uv\_spawn\(\) 将会失败，返回 `UV_ENOTSUP `错误码。
+
 
 
