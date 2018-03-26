@@ -81,5 +81,19 @@ enum uv_process_flags {
 
 ---
 
+**uv\_stdio\_container\_t**
+
+每个传递给子进程的输入输出句柄或者 fd 的容器
+
+```
+typedef struct uv_stdio_container_s {
+    uv_stdio_flags flags;
+    union {
+        uv_stream_t* stream;
+        int fd;
+    } data;
+} uv_stdio_container_t;
+```
+
 
 
