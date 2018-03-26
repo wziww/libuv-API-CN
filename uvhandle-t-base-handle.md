@@ -125,3 +125,11 @@ void uv_ref(uv_handle_t* handle)
 
 给定的句柄的引用。引用是幂等的，就是说，如果一个句柄已经进行了通过这个函数来 referenced calling，这个函数再次调用将会没有效果，具体查看 Reference counting。
 
+---
+
+```cpp
+void uv_unref(uv_handle_t* handle)
+```
+
+给定句柄的取消引用
+
