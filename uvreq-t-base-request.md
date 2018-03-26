@@ -84,10 +84,18 @@ size_t uv_req_size(uv_req_type type)
 ---
 
 ```cpp
-void* uv_req_get_data
+void* uv_req_get_data(const uv_req_t* req)
 ```
 
 返回 req-&gt;data。
 
 新增于 1.19.0 版本。
+
+---
+
+```cpp
+void* uv_req_set_data(uv_req_t* req, void* data)
+```
+
+
 
