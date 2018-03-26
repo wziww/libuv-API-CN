@@ -73,5 +73,11 @@ int uv_cancel(uv_req_t* req)
 * uv\_fs\_t 请求将它的req-&gt;result 设置为 UV_\_ECANCELED。_
 * uv\_work\_t，uv\_getaddrinfo\_t_ 或者 \_c:type:uv\_getnameinfo\_t_ 请求具有状态调为 _UV_\_ECANCELED 的回调函数。
 
+---
 
+```cpp
+size_t uv_req_size(uv_req_type type)
+```
+
+返回给定请求类型的大小，对..FFI....特别有用。
 
