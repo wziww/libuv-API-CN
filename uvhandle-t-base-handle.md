@@ -111,5 +111,5 @@ int uv_is_closing(const uv_handle_t* handle)
 void uv_close(uv_handle_t* handle, uv_close_cb close_cb)
 ```
 
-
+句柄关闭函数，close\_cb（回调）会在该函数调用后被异步调用。
 
