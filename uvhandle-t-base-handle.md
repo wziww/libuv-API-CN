@@ -105,5 +105,11 @@ int uv_is_closing(const uv_handle_t* handle)
 
 > **Note：该函数只应在句柄初始化之后和关闭之前调用。**
 
+---
+
+```cpp
+void uv_close(uv_handle_t* handle, uv_close_cb close_cb)
+```
+
 
 
