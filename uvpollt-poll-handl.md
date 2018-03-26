@@ -11,3 +11,9 @@ Poll handles 的目的是让依赖于 event loop 的外部库能够在 socket �
 
 对于一个 socket 有多个活动的句柄的行为是十分不好的，可能会导致 libuv 变为 busyloop 或者失灵。
 
+用户不应该关闭一个文件描述符，当它被活跃的句柄轮询的时候，这会导致 handle 报错，也可能会让另一个 socket 开始轮询，
+
+fd 可以通过调用 uv\_poll\_stop\(\) 或者 uv\_close\(\) 来进行安全的立刻关闭。
+
+.
+
