@@ -135,3 +135,17 @@ void uv_unref(uv_handle_t* handle)
 
 ---
 
+```cpp
+int uv_has_ref(const uv_handle_t* handle)
+```
+
+若一个句柄是被引用的，返回 non-zero，否则返回 zero。具体查看 Reference counting。
+
+---
+
+```cpp
+size_t uv_handle_size(uv_handle_type type)
+```
+
+返回给定句柄类型的大小。对不想知道具体结构实现的 FFI binding writers 会十分有用。
+
