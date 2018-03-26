@@ -97,5 +97,7 @@ void* uv_req_get_data(const uv_req_t* req)
 void* uv_req_set_data(uv_req_t* req, void* data)
 ```
 
+Sets req-&gt;data to data。
 
+新增与 1.19.0 版本。
 
