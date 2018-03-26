@@ -101,3 +101,13 @@ Sets req-&gt;data to data。
 
 新增与 1.19.0 版本。
 
+---
+
+```cpp
+uv_req_type uv_req_get_type(const uv_req_t* req)
+```
+
+Returnsreq-&gt;type.
+
+New in version 1.19.0.
+
