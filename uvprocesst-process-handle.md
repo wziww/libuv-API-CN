@@ -40,5 +40,9 @@ void (*uv_exit_cb)(uv_process_t*, int64_t exit_status, int term_signal)
 
 没想好怎么翻译更好
 
+---
 
+**uv\_process\_flags**
+
+uv\_process\_options\_t 函数中设置的 flags 参数
 
