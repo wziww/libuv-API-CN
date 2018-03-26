@@ -91,6 +91,9 @@ int uv_is_active(const uv_handle_t* handle)
 
 * uv\_pipe\_t，uv\_tcpt，uv\_udp\_t 等等。基础的 I/O 操作在进行 I/O  的时候，例如读、写、连接、接受新连接等等的时候，是活跃的。
 
-* 
+* uv\_check\_t，uv\_idle\_t，uv\_timert 等等。当调用 uv\_check\_start\(\)，uv\_idle\_start\(\)等方法启用的时候，是活跃的。
+
+
+
 
 
