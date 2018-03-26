@@ -41,3 +41,19 @@ int uv_prepare_start(uv_prepare_t* prepare, uv_prepare_cb cb)
 
 以提供的回调函数启动 handle。
 
+---
+
+```cpp
+int uv_prepare_stop(uv_prepare_t* prepare)
+```
+
+停止 handle，回调函数不再会被执行。
+
+---
+
+> See also
+>
+> The[`uv_handle_t`](http://docs.libuv.org/en/v1.x/handle.html#c.uv_handle_t)API functions also apply.
+
+
+
