@@ -213,7 +213,7 @@ void uv_disable_stdio_inheritance(void)
 
 建议在 fd 关闭和复制之前，在程序中尽可能地早调用该方法。
 
-> **Note：**
+> **Note：**This function works on a best-effort basis: there is no guarantee that libuv can discover all file descriptors that were inherited. In general it does a better job on Windows than it does on Unix.
 
 
 
