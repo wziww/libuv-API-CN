@@ -11,6 +11,8 @@ Process handles 会产生一个新的进程并且让用户能够去控制它和�
 
 进程操作类型
 
+---
+
 **uv\_process\_options\_t**
 
 传递给 uv\_spawn\(\) 函数的进程建立参数
@@ -30,5 +32,5 @@ typedef struct uv_process_options_s {
 } uv_process_options_t;
 ```
 
-
+---
 
