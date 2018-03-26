@@ -44,5 +44,42 @@ void (*uv_exit_cb)(uv_process_t*, int64_t exit_status, int term_signal)
 
 **uv\_process\_flags**
 
-uv\_process\_options\_t 函数中设置的 flags 参数
+uv\_process\_options\_t 函数中设置的 flags 参数。
+
+```
+enum uv_process_flags {
+    /*
+    * Set the child process' user id.
+    */
+    UV_PROCESS_SETUID = (1 << 0),
+    /*
+    * Set the child process' group id.
+    */
+    UV_PROCESS_SETGID = (1 << 1),
+    /*
+    * Do not wrap any arguments in quotes, or perform any other escaping, when
+    * converting the argument list into a command line string. This option is
+    * only meaningful on Windows systems. On Unix it is silently ignored.
+    */
+    UV_PROCESS_WINDOWS_VERBATIM_ARGUMENTS = (1 << 2),
+    /*
+    * Spawn the child process in a detached state - this will make it a process
+    * group leader, and will effectively enable the child to keep running after
+    * the parent exits. Note that the child process will still keep the
+    * parent's event loop alive unless the parent process calls uv_unref() on
+    * the child's process handle.
+    */
+    UV_PROCESS_DETACHED = (1 << 3),
+    /*
+    * Hide the subprocess console window that would normally be created. This
+    * option is only meaningful on Windows systems. On Unix it is silently
+    * ignored.
+    */
+    UV_PROCESS_WINDOWS_HIDE = (1 << 4)
+};
+```
+
+---
+
+
 
