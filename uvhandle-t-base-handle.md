@@ -113,5 +113,5 @@ void uv_close(uv_handle_t* handle, uv_close_cb close_cb)
 
 句柄关闭函数，close\_cb（回调）会在该函数调用后被异步调用。它**必须在**每个句柄内存被释放之前调用。
 
-
+操作文件描述符关闭函数会立即执行，但是close\_cb会在下一次 event loop 的时候被调用，这让你有机会去释放该句柄占用的资源。
 
