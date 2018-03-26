@@ -155,3 +155,9 @@ size_t uv_handle_size(uv_handle_type type)
 
 详情查看[源文档](http://docs.libuv.org/en/v1.x/handle.html#refcount)。
 
+## Reference counting
+
+libuv 的 event pool \(如果是用默认 mode 启用的\)，将会运行直到没有活跃的或者被 referenced 的句柄存在。使用者可以通过取消对活跃句柄的引用强制循环退出，如通过在调用 uv\_timer\_start\(\) 之后调用 uv\_unref\(\) 。
+
+
+
