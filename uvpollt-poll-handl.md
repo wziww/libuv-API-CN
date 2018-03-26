@@ -9,3 +9,5 @@ Poll handles 的目的是让依赖于 event loop 的外部库能够在 socket �
 
 有可能 poll handles 会偶尔表示一个文件描述符为可读或可写的（当它不可的时候）。所以用户应该处理巴拉巴拉。
 
+对于一个 socket 有多个活动的句柄的行为是十分不好的，可能会导致 libuv 变为 busyloop 或者失灵。
+
