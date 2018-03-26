@@ -215,5 +215,13 @@ void uv_disable_stdio_inheritance(void)
 
 > **Note：**This function works on a best-effort basis: there is no guarantee that libuv can discover all file descriptors that were inherited. In general it does a better job on Windows than it does on Unix.
 
+---
 
+```cpp
+int uv_spawn(uv_loop_t* loop, uv_process_t* handle, const uv_process_options_t* options)
+```
+
+初始化进程操作符并启动进程。如果进程成功启动，函数将返回 0，否则，为什么不能启用进程的错误操作符将会返回。
+
+最大的可能 spwan 失败的原因是（包括但不限于）：可执行文件不存在，用户或所在群组权限不够，或者内存不够开辟新的进程。
 
