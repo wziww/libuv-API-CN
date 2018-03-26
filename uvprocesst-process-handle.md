@@ -145,3 +145,15 @@ typedef enum {
 
 命令行参数。args\[0\] 应为可执行文件的路径。在 Windows 上使用 CreateProcess （会将参数转换为字符串）会带来一些奇怪的错误。查看 uv\_process\_flags 中的 UV\_PROCESS\_WINDOWS\_VERBATIM\_ARGUMENTS。
 
+---
+
+**uv\_process\_options\_t.env**
+
+新进程的环境变量。如果为 NULL 那么环境变量会与父进程一致。
+
+---
+
+**uv\_process\_options\_t.cwd**
+
+子进程的当前工作路径。
+
