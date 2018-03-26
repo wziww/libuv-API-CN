@@ -149,3 +149,7 @@ size_t uv_handle_size(uv_handle_type type)
 
 返回给定句柄类型的大小。对不想知道具体结构实现的 FFI binding writers 会十分有用。
 
+## Miscellaneous API functions
+
+
+
