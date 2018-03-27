@@ -24,3 +24,11 @@ int uv_pipe_init(uv_loop_t* loop, uv_pipe_t* handle, int ipc)
 
 pipe handle 初始化。IPC参数是一个布尔值，用于表示此管道是否将用于进程间的句柄传递。
 
+---
+
+```cpp
+int uv_pipe_open(uv_pipe_t* handle, uv_file file)
+```
+
+
+
