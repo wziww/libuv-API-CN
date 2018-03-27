@@ -4,3 +4,17 @@ Pipe handle 在 Unix 本地域套接字和 Windows 命名管道上提供了一�
 
 `uv_pipe_t`是`uv_stream_t`的子类。
 
+# 数据类型
+
+**uv\_pipe\_t**
+
+Pipe handle 类
+
+# 公有成员
+
+> See also
+>
+> The[`uv_stream_t`](http://docs.libuv.org/en/v1.x/stream.html#c.uv_stream_t)members also apply.
+
+
+
