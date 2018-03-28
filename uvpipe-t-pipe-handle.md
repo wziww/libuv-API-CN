@@ -32,7 +32,7 @@ int uv_pipe_open(uv_pipe_t* handle, uv_file file)
 
 以管道模式打开一个存在的文件描述符或句柄。
 
-1.2.1版本改为：文件描述符被设置为非阻塞模式。
+1.2.1 版本改为：文件描述符被设置为非阻塞模式。
 
 > **Note：传递的文件描述符或句柄没有对类型进行校验，不过需要它们为一个有效的管道。**
 
@@ -43,4 +43,8 @@ int uv_pipe_bind(uv_pipe_t* handle, const char* name)
 ```
 
 将管道绑定到文件路径（UNIX）或名称（Windows）。
+
+> **Note：Unix 上的路径被转换为 **sizeof\(sockaddr\_un.sun\_path\) **bytes 大小 ，范围通常在 92 - 108 bytes。**
+
+
 
