@@ -36,5 +36,11 @@ int uv_pipe_open(uv_pipe_t* handle, uv_file file)
 
 > **Note：传递的文件描述符或句柄没有对类型进行校验，不过需要它们为一个有效的管道。**
 
+---
 
+```cpp
+int uv_pipe_bind(uv_pipe_t* handle, const char* name)
+```
+
+将管道绑定到文件路径（UNIX）或名称（Windows）。
 
