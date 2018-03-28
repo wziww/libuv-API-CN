@@ -78,5 +78,11 @@ void uv_pipe_pending_instances(uv_pipe_t* handle, int count)
 
 > **Note：只在Windows下有效。**
 
+---
+
+```cpp
+int uv_pipe_pending_count(uv_pipe_t* handle)
+```
+
 
 
