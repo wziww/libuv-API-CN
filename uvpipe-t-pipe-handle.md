@@ -70,8 +70,13 @@ A preallocated buffer must be provided. The size parameter holds the length of t
 
 New in version 1.3.0.
 
-  
-
-
 ---
+
+```cpp
+void uv_pipe_pending_instances(uv_pipe_t* handle, int count)
+```
+
+> **Note：只在Windows下有效。**
+
+
 
