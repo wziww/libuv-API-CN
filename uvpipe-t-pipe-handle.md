@@ -32,3 +32,5 @@ int uv_pipe_open(uv_pipe_t* handle, uv_file file)
 
 以管道模式打开一个存在的文件描述符或句柄。
 
+1.2.1版本改为：文件描述符被设置为非阻塞模式。
+
