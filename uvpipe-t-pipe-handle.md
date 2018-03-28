@@ -30,5 +30,5 @@ pipe handle 初始化。IPC参数是一个布尔值，用于表示此管道是�
 int uv_pipe_open(uv_pipe_t* handle, uv_file file)
 ```
 
-
+以管道模式打开一个存在的文件描述符或句柄。
 
